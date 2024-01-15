@@ -1,0 +1,19 @@
+<h2>Buscar por <small> {{regionActiva}} </small></h2>
+<hr>
+<h5>Selecione una region </h5>
+
+<div class="row">
+
+    
+    <div class="col"> 
+        <button *ngFor="let item of regiones" 
+        class="btn btn-outline-primary" 
+        (click)="activarRegion(item)"
+        > 
+        {{item}}
+        </button>
+    </div>
+</div>
+
+<hr>
+
